@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 17 | Bootstrap 4</title>
+    <link rel="preload" href="./css/bootstrap.min.css">
+    <link rel="preload" href="./css/bootstrap.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-3.3.1.min.js" defer></script>
+    <script src="./js/bootstrap.js" defer></script>
+    <script src="./js/popper.min.js" defer></script>
+</head>
+<body>
+    <section class="feed_container">
+        <article class="post_box">
+            <button type="button" class="btn btn-primary">Primary</button>  
+            <button type="button" class="btn btn-secondary">Secondary</button>  
+            <button type="button" class="btn btn-success">Success</button>  
+            <button type="button" class="btn btn-danger">Danger</button>  
+            <button type="button" class="btn btn-warning">Warning</button>  
+            <button type="button" class="btn btn-info">Info</button>  
+            <button type="button" class="btn btn-light">Light</button>  
+            <button type="button" class="btn btn-dark">Dark</button>  
+            <button type="button" class="btn btn-link">Link</button>
+        </article>
+
+        <br><hr><br>
+
+        <article class="post_box">
+            <div class="container">
+                <div class="row">    
+                    <div class="col-4 col-sm-6 col-xs-12 bg-success">     
+                        Un div ocupando cuatro columnas de la grilla    
+                    </div>
+                    <div class="col-4 col-sm-6 col-xs-12 bg-warning">     
+                        Un div ocupando cuatro columnas de la grilla    
+                    </div>    
+                    <div class="col-4 col-sm-6 col-xs-12 bg-danger">     
+                        Un div ocupando cuatro columnas de la grilla    
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <br><hr><br>
+
+        <article class="post_box">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Ejecutar Modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lorem ipsun dolor sit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, pariatur, nisi sunt labore qui minima, 
+                            impedit tempora blanditiis quae dignissimos cupiditate aspernatur ea commodi reprehenderit quia deserunt 
+                            recusandae corporis natus.
+                        </p>
+                        <img src="https://improvephotography.com/wp-content/uploads/2016/01/real-estate-photography.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
